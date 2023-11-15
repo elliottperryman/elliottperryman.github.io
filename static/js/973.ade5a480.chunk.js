@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkelliottperryman_github_io=self.webpackChunkelliottperryman_github_io||[]).push([[973],{7973:(t,e,i)=>{t.exports=i.p+"static/media/post1.b1c8d6031c2121bf8362.md"}}]);
