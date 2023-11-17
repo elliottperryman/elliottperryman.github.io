@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <div className='centered-text'>
       <h1>Elliott Perryman: Online Resume</h1>
+      <h1> Test </h1>
       <p>Recent grad with a background in math, physics, and computer science.</p>
       <div className="container">
         <div className="left-column">
