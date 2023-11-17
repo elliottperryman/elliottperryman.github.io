@@ -10,10 +10,15 @@ const Posts = () => {
   
     const fetchPost = async (fileName) => {
       try {
-        const file = await import(`../posts/${fileName}`);
-        const response = await fetch(file.default);
-        const text = await response.text();
-        return { fileName, data: matter(text) };
+        const response = await fetch(`../posts/${fileName}`);
+        if (response.ok) {
+          const text = await response.text();
+          const data = matter(text);
+          return { fileName, data };
+        } else {
+          console.error(`Failed to fetch file: ${response.status} ${response.statusText}`);
+          return null;
+        }
       } catch (error) {
         console.log(`Error processing ${fileName}:`, error);
         return null;
