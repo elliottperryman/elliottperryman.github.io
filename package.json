@@ -2,7 +2,7 @@
   "name": "elliottperryman.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://elliottperryman.github.io/",
+  "homepage": "http://elliottperryman.github.io/elliottperryman.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

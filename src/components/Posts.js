@@ -80,15 +80,7 @@ const Posts = () => {
     return 0;
   });
 
-  const filteredPosts = sortedPosts.filter((post) => {
-    console.log("search term: ")
-    console.log(searchTerm)
-    console.log("post: ")
-    console.log(post)
-    console.log(post.data.data)
-    console.log(post.fileName)
-    console.log(post.data.data.title)
-    
+  const filteredPosts = sortedPosts.filter((post) => {    
     const lowerCaseSearchTerm = searchTerm.toLowerCase();
     return (
       post.data.data.title.toLowerCase().includes(lowerCaseSearchTerm) ||
