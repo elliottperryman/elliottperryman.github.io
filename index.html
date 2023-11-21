@@ -4,21 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your website description here">
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./layout.css">
+    <title>Elliott Perryman</title>
+    <link rel="stylesheet"  type="text/css" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
+<header class="top-navbar">
+    <nav>
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a href='https://elliottperryman.github.io/index.html'>Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="https://elliottperryman.github.io/posts/index.html">Blog</a>
+        </li>
+        <li class="navbar-item dropdown">
+          Links
+          <ul class="dropdown-content">
+            <li><a href="https://github.com/elliottperryman">Github</a></li>
+            <li><a href="https://gitlab.com/davidperryman">Gitlab</a></li>
+            <li><a href="https://www.linkedin.com/in/david-elliott-perryman-07332612b/">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/david.perryman.902/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/elliottperryman/">Instagram</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 <body>
-    <div className='centered-text'>
+    <div class='centered-text'>
         <h1>Elliott Perryman's Online Resume</h1>
         <p>Recent grad with a background in math, physics, and computer science.</p>
-        <div className="container">
-            <div className="left-column">
+        <div class="container">
+            <div class="left-column">
                 <h2>Work Experience</h2>
 
                 <h3>Researcher at Institut Laue-Langevin, Grenoble, France</h3>
                 <p><em>May 2022 - July 2023</em></p>
-                <div className="left-text">
+                <div class="left-text">
                     <ul>
                         <li>Created Bayesian and Frequentist autonomous experimentation methods that decrease experimentation lifetime by approximately 10X.</li>
                     </ul>
@@ -26,7 +48,7 @@
 
                 <h3>Software Developer at Caravel Concepts LLC, Remote</h3>
                 <p><em>January 2021 - August 2021</em></p>
-                <div className="left-text">
+                <div class="left-text">
                     <ul>
                         <li>Accelerated resource allocation algorithm using jax and some math by 6X and wrote Django+Postgres APIs.</li>
                     </ul>
@@ -34,7 +56,7 @@
 
                 <h3>Intern at Lawrence Berkeley National Lab, Berkeley CA</h3>
                 <p><em>August 2019 - June 2021</em></p>
-                <div className="left-text">
+                <div class="left-text">
                     <ul>
                         <li>Sped up Gaussian process tool GPCAM by 20X using PyTorch, with code open-sourced.</li>
                         <li>Published crystallography refinement algorithm.</li>
@@ -43,17 +65,17 @@
 
                 <h3>Researcher at Oak Ridge National Lab, Oak Ridge TN</h3>
                 <p><em>August 2017 - June 2021</em></p>
-                <div className="left-text">
+                <div class="left-text">
                     <ul>
                         <li>Ported signal processing method to GPU using CUDA FFT: processing time went from ~15s to ~2s, meeting the ~13s requirement.</li>
                         <li>Using ML methods to quickly identify anomalous signals (it took a couple of days to find a signal that haunted the data for more than a year).</li>
                     </ul>
                 </div>
             </div>
-            <div className='right-column'>
-                <div className="left-text">
+            <div class='right-column'>
+                <div class="left-text">
                     <h2>Skills:</h2>
-                    <div className="clt">
+                    <div class="clt">
                         <ul>
                             <li>
                                 <details><summary>
@@ -62,43 +84,43 @@
                                         <li>
                                             <details><summary>C Family</summary>
                                                 <ul>
-                                                    <li><a href='/blog?search=c%20language'>C language</a></li>
-                                                    <li><a href='/blog?search=c%2B%2B'>C++</a></li>
-                                                    <li><a href='/blog?search=CUDA'>CUDA</a></li>
-                                                    <li><a href='/blog?search=openMPI'>openMPI</a></li>
-                                                    <li><a href='/blog?search=openMP'>openMP</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/c%20language'>C language</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/c%2B%2B'>C++</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/CUDA'>CUDA</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/openMPI'>openMPI</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/openMP'>openMP</a></li>
                                                 </ul>
                                             </details>
                                         </li>
                                         <li>
                                             <details><summary>Python</summary>
                                                 <ul>
-                                                    <li><a href='/blog?search=Numpy'>Numpy</a></li>
-                                                    <li><a href='/blog?search=Jax'>Jax</a></li>
-                                                    <li><a href='/blog?search=Numba'>Numba</a></li>
-                                                    <li><a href='/blog?search=Pandas'>Pandas</a></li>
-                                                    <li><a href='/blog?search=sklearn'>sklearn</a></li>
-                                                    <li><a href='/blog?search=Pytorch'>Pytorch</a></li>
-                                                    <li><a href='/blog?search=Django'>Django</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Numpy'>Numpy</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Jax'>Jax</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Numba'>Numba</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Pandas'>Pandas</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/sklearn'>sklearn</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Pytorch'>Pytorch</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Django'>Django</a></li>
                                                 </ul>
                                             </details>
                                         </li>
                                         <li>
-                                            <details><summary><a href='/blog?search=SQL'>SQL</a></summary>
+                                            <details><summary><a href='https://elliottperryman.github.io/posts/SQL'>SQL</a></summary>
                                                 <ul>
-                                                    <li><a href='/blog?search=Postgres'>Postgres</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Postgres'>Postgres</a></li>
                                                 </ul>
                                             </details>
                                         </li>
-                                        <li><a href='/blog?search=Julia'>Julia</a></li>
-                                        <li><a href='/blog?search=R'>R</a></li>
+                                        <li><a href='https://elliottperryman.github.io/posts/Julia'>Julia</a></li>
+                                        <li><a href='https://elliottperryman.github.io/posts/R'>R</a></li>
                                         <li>
                                             <details><summary>Frontend</summary>
                                                 <ul>
-                                                    <li><a href='/blog?search=HTML'>HTML</a></li>
-                                                    <li><a href='/blog?search=CSS'>CSS</a></li>
-                                                    <li><a href='/blog?search=Javascript'>Javascript</a></li>
-                                                    <li><a href='/blog?search=React'>React</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/HTML'>HTML</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/CSS'>CSS</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Javascript'>Javascript</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/React'>React</a></li>
                                                 </ul>
                                             </details>
                                         </li>
@@ -111,28 +133,28 @@
                                         <li>
                                             <details><summary>Optimization</summary>
                                                 <ul>
-                                                    <li><a href='/blog?search=Distributed%20Optimization'>Distributed Optimization</a></li>
-                                                    <li><a href='/blog?search=Bayesian%20Optimization'>Bayesian Optimization</a></li>
-                                                    <li><a href='/blog?search=Numerical%20Optimization'>Numerical Optimization</a></li>
-                                                    <li><a href='/blog?search=Linear%20and%20Quadratic%20Programming'>Linear and Quadratic Programming</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Distributed%20Optimization'>Distributed Optimization</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Bayesian%20Optimization'>Bayesian Optimization</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Numerical%20Optimization'>Numerical Optimization</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Linear%20and%20Quadratic%20Programming'>Linear and Quadratic Programming</a></li>
                                                 </ul>
                                             </details>
                                         </li>
                                         <li>
                                             <details><summary>Inference (including ML Methods)</summary>
                                                 <ul>
-                                                    <li><a href='/blog?search=Parametric%20Bayesian%20Inference'>Parametric Bayesian Inference</a></li>
-                                                    <li><a href='/blog?search=Gaussian%20Processes'>Gaussian Processes</a></li>
-                                                    <li><a href='/blog?search=Convolutional%20Neural%20Networks'>Convolutional Neural Networks</a></li>
-                                                    <li><a href='/blog?search=NLP%20Transformers'>NLP Transformers</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Parametric%20Bayesian%20Inference'>Parametric Bayesian Inference</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Gaussian%20Processes'>Gaussian Processes</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/Convolutional%20Neural%20Networks'>Convolutional Neural Networks</a></li>
+                                                    <li><a href='https://elliottperryman.github.io/posts/NLP%20Transformers'>NLP Transformers</a></li>
                                                 </ul>
                                             </details>
                                         </li>
-                                        <li><a href='/blog?search=Fourier%20Analysis'>Fourier Analysis and Filtering</a></li>
-                                        <li><a href='/blog?search=Digital%20Signal%20Processing'>Digital Signal Processing</a></li>
-                                        <li><a href='/blog?search=Linear%20Algebra'>Linear Algebra</a></li>
-                                        <li><a href='/blog?search=Parallelization'>Parallelization</a></li>
-                                        <li><a href='/blog?search=Monte-Carlo%20Methods'>Monte-Carlo Methods</a></li>
+                                        <li><a href='https://elliottperryman.github.io/posts/Fourier%20Analysis'>Fourier Analysis and Filtering</a></li>
+                                        <li><a href='https://elliottperryman.github.io/posts/Digital%20Signal%20Processing'>Digital Signal Processing</a></li>
+                                        <li><a href='https://elliottperryman.github.io/posts/Linear%20Algebra'>Linear Algebra</a></li>
+                                        <li><a href='https://elliottperryman.github.io/posts/Parallelization'>Parallelization</a></li>
+                                        <li><a href='https://elliottperryman.github.io/posts/Monte-Carlo%20Methods'>Monte-Carlo Methods</a></li>
                                     </ul>
                                 </details>
                             </li>
@@ -180,14 +202,14 @@
                 <h2>EDUCATION</h2>
                 <h3><a href="#EducationMath">Master Applied Math at Grenoble INP & Univ. Grenoble-Alpes</a></h3>
                 <p><em>Fall 2021 - Spring 2023</em></p>
-                <div className="left-text">
+                <div class="left-text">
                     <ul>
                         <li>Grew my math skills, but found the program not challenging enough.</li>
                     </ul>
                 </div>
                 <h3><a href="#EducationCSPhysics">Bachelor’s Computer Science Honors and Physics at Univ. Tennessee at Knoxville</a></h3>
                 <p><em>Fall 2016 - Spring 2021</em></p>
-                <div className="left-text">
+                <div class="left-text">
                     <ul>
                         <li>Started in computer science but fell in love with physics problem-solving.</li>
                         <li>Took graduate machine learning and mathematics courses.</li>
