@@ -7,10 +7,13 @@ const Posts = () => {
 
   useEffect(() => {
     const filenames = ['post1.md', 'post2.md']; // Array of filenames
-  
+
     const fetchPost = async (fileName) => {
       try {
-        const response = await fetch(`../posts/${fileName}`);
+        const module = await import(`../posts/${fileName}`);
+        const filePath = module.default; 
+        const response = await fetch(filePath);
+    
         if (response.ok) {
           const text = await response.text();
           const data = matter(text);
@@ -78,6 +81,14 @@ const Posts = () => {
   });
 
   const filteredPosts = sortedPosts.filter((post) => {
+    console.log("search term: ")
+    console.log(searchTerm)
+    console.log("post: ")
+    console.log(post)
+    console.log(post.data.data)
+    console.log(post.fileName)
+    console.log(post.data.data.title)
+    
     const lowerCaseSearchTerm = searchTerm.toLowerCase();
     return (
       post.data.data.title.toLowerCase().includes(lowerCaseSearchTerm) ||
