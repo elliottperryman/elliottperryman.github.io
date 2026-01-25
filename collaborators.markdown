@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Collaborators
-permalink: /collaborators/
+title: Team
+permalink: /team/
 order: 10
 ---
 
