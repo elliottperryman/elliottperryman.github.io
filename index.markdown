@@ -6,5 +6,5 @@ layout: home
 ---
 
 ![My helpful screenshot](/assets/adamfoster.jpg){:class="main-img"}
-I am a PhD student in collaboration with [Institute Laue-Langevin](https://www.ill.eu), [University Grenoble-Alpes](https://www.univ-grenoble-alpes.fr), and the [Paul Scherrer Institute](https://www.psi.ch) where I work on the design of neutron scattering experiments with my supervisors and collaborators.
+I am a PhD student in collaboration with [Institute Laue-Langevin](https://www.ill.eu), the [Paul Scherrer Institute](https://www.psi.ch), and the [University Grenoble-Alpes](https://www.univ-grenoble-alpes.fr) where I work on the design of neutron scattering experiments with my supervisors and collaborators.
 I want to understand how statistical methods and machine learning can help design maximally efficient experiments that explain the natural world. 
