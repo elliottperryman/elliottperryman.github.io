@@ -2,7 +2,7 @@
 layout: post
 title:  "Optimization of Particle Energy and Arrival Time Determination using GPUs for the Nab Experiment"
 date:   2018-10-26
-categories: paper
+categories: talk
 external_url: https://meetings.aps.org/Meeting/HAW18/Event/331622
 external_site: meetings.aps.org
 authors: David Perryman
