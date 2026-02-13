@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "GpCAM Code"
+date:   2023-12-15
+categories: papers
+external_url: https://ui.adsabs.harvard.edu/link_gateway/2023zndo..10393189N/doi:10.5281/zenodo.10393189
+external_site: epj-conferences.org
+authors: Marcus Noack, James Sethian, Kevin Yager, Masafumi Fukuto, Petrus Zwart, Daniela Ushizima, Harinarayan Krishnan, Steven Lee, Ronald Pandolfi, Ian Humphrey, David Perryman, Pablo Enfedaque, Alexander Hexemer, Suchismita Sarker, Tobias Weber, Apurva Mehta, Ruipeng Li, Gregory Doerk, Martin Boehm
+published: Zenodo
+tag: paper
+---
+
+Code for GpCAM
+<!--more-->
