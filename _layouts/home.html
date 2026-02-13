@@ -44,3 +44,53 @@ layout: default
   {%- endif -%}
 
 </div>
+<script>
+  function collapseAuthorLists() {
+    document.querySelectorAll('.post-list li p').forEach(function(p) {
+      // Check if this paragraph has author content
+      if (p.innerHTML.includes('.') || p.querySelector('em')) {
+        let content = p.innerHTML;
+        let authorPart = content;
+        let journalPart = '';
+        
+        let emTag = p.querySelector('em');
+        if (emTag) {
+          authorPart = content.substring(0, content.indexOf('<em>'));
+          journalPart = content.substring(content.indexOf('<em>'));
+        }
+        
+        // Split by commas and also handle "and" in author lists
+        let authorCount = (authorPart.match(/,/g) || []).length + 1;
+        if (authorPart.includes(' and ')) authorCount += 1;
+        
+        if (authorCount > 3) {
+          // Get first 3 authors - handle both comma and "and" cases
+          let authors = authorPart.split(',').map(a => a.trim());
+          let firstThree = authors.slice(0, 3).join(', ');
+          // Remove trailing "and" if present
+          firstThree = firstThree.replace(/,?\s+and\s+$/, '');
+          
+          p.innerHTML = `<span class="authors-collapsed" onclick="this.style.display='none'; this.nextElementSibling.style.display='inline'; this.nextElementSibling.style.cursor='pointer';">${firstThree}, et al.${journalPart}</span>
+                         <span class="authors-expanded" style="display:none;" onclick="this.style.display='none'; this.previousElementSibling.style.display='inline'; this.previousElementSibling.style.cursor='pointer';">${content}</span>`;
+        }
+      }
+    });
+  }
+  
+  // Run when page is loaded
+  document.addEventListener('DOMContentLoaded', collapseAuthorLists);
+</script>
+
+<style>
+.authors-collapsed {
+  cursor: pointer;
+  border-bottom: 1px dashed #999;
+}
+.authors-expanded {
+  cursor: pointer;
+  border-bottom: 1px dashed #999;
+}
+.authors-collapsed:hover, .authors-expanded:hover {
+  background-color: #f0f0f0;
+}
+</style>
