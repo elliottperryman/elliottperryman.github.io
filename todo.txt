@@ -1,0 +1,18 @@
+Blog Posts:
+1. neutron simulator game: "Simulate a neutron scattering experiment on my website"
+* Add high score feature
+2. HSGP log eigenvalues: "Small Exponentials in Jax"
+3. HSGP err depends on ell: "Ell Matters More than Anything Else in Hilbert Space Gaussian Processes"
+4. LSWT with Jax: "Putting Error Bars on Dispersion Curves"
+5. GenX with Jax: "Putting Error Bars on Reflectometry Curves"
+6. Poisson count time control: "D-Optimal Design for Poisson Count Data"
+
+For each post I need a slug
+
+For each post I should explain:
+* Why I am working on this? What is the impact?
+* What was the first/obvious answer? Why did that fail? How did I find out?
+* How did I fix this and what is the outcome?
+
+
+
