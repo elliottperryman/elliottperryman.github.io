@@ -10,5 +10,6 @@ published: Arxiv
 tag: preprint
 ---
 
+I worked on the Nab Experiment when I was an undergrad at UTK. I really think the world of my boss (Nadia Fomin). I am on this paper, but I am not sure I should be, given that I was not around when the experiment finally ran. 
 
 <!--more-->

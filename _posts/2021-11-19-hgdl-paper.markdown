@@ -10,5 +10,5 @@ published: 2021 3rd Annual Workshop on Extreme-scale Experiment-in-the-Loop Comp
 tag: paper
 ---
 
-HGDL paper
+I co-wrote a global optimization method with my colleague Marcus. 
 <!--more-->

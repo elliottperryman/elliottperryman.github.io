@@ -10,5 +10,6 @@ published: Zenodo
 tag: code
 ---
 
+I contributed to GpCAM code with my colleague Marcus Noack at Lawrence Berkeley Lab. It was a fun project. I mostly focused on linear algebra methods and porting code to GPU. 
 
 <!--more-->

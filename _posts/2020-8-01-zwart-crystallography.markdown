@@ -10,5 +10,5 @@ published: IUCr-D
 tag: paper
 ---
 
-
+I wrote a paper for my internship semester at Lawrence Berkeley Labs. I would do it differently now, but I am still happy with the experience. 
 <!--more-->

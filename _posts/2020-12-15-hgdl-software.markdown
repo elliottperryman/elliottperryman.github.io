@@ -10,5 +10,6 @@ published: US Department of Energy (DOE) Software
 tag: code
 ---
 
+I co-wrote a global optimization method with my colleague Marcus. 
 
 <!--more-->

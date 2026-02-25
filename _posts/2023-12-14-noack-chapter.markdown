@@ -9,5 +9,6 @@ published: Chapman and Hall/CRC
 tag: chapter
 ---
 
+Marcus asked my boss (Martin) and I for a chapter in his book, which we contributed to. It was based off of my master's thesis, and basically claims that parametric experimental design is more effective than nonparametric and therefore should be the direction of research. 
 
 <!--more-->
