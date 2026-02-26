@@ -1,11 +1,15 @@
 Blog Posts:
-1. neutron simulator game: "Simulate a neutron scattering experiment on my website"
-* Add high score feature
+~~1. neutron simulator game: "Simulate a neutron scattering experiment on my website"
+* Add high score feature~~
+
 2. HSGP log eigenvalues: "Small Exponentials in Jax"
 3. HSGP err depends on ell: "Ell Matters More than Anything Else in Hilbert Space Gaussian Processes"
 4. LSWT with Jax: "Putting Error Bars on Dispersion Curves"
 5. GenX with Jax: "Putting Error Bars on Reflectometry Curves"
 6. Poisson count time control: "D-Optimal Design for Poisson Count Data"
+7. Nab Fourier Analysis
+8. Nab Pileup (CNN and xi-squared)
+9. Nab k-means
 
 For each post I need a slug
 
