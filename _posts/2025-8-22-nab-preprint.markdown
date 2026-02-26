@@ -10,6 +10,6 @@ published: Arxiv
 tag: preprint
 ---
 
-I worked on the Nab Experiment when I was an undergrad at UTK. I really think the world of my boss (Nadia Fomin). I am on this paper, but I am not sure I should be, given that I was not around when the experiment finally ran. 
+I worked on the Nab Experiment when I was an undergrad at UTK and working at Oak Ridge on signal processing. Specifically, we used the ([Fast Fourier Transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform)) on GPUs to filter signals. I plan to make a blog post explaining further what I did. I really think the world of my boss (Nadia Fomin). I am on this paper, but I am not sure I should be, given that I was not around when the experiment finally ran. 
 
 <!--more-->

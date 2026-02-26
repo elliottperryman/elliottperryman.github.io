@@ -10,5 +10,5 @@ published: 5th Joint Meeting of the APS Division of Nuclear Physics and the Phys
 tag: poster
 ---
 
-
+This was one of the first posters I presented. Maybe the very first if I remember right. I had been working at Oak Ridge on signal processing. Specifically, we used the ([Fast Fourier Transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform)) on GPUs to filter signals. I plan to make a blog post explaining further what I did. 
 <!--more-->
