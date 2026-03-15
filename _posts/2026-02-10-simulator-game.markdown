@@ -7,6 +7,7 @@ external_url: https://neutrons.streamlit.app
 external_site: streamlit.app
 authors: Elliott Perryman
 tag: post
+published: Blog Post
 ---
 
 Hello Everybody!
