@@ -23,7 +23,7 @@ $$
 f(x) \approx \sum_i \alpha_i \phi_i(x) \beta_i
 $$
 
-Where $$\alpha_i$ is the penalty for higher order terms and $$\beta_i$$ is drawn from a standard normal:
+Where $ \alpha_i $ is the penalty for higher order terms and $$ \beta_i $$ is drawn from a standard normal:
 
 $$
 \beta_i \sim \mathcal{N}(0,1)
@@ -31,7 +31,7 @@ $$
 
 If you are familiar with GPs, you know that this is a huge simplification in terms of the complexity. Now, rather than the matrix inverse necessary for a full GP, you are doing linear regression. 
 
-But, here's a catch. $$\alpha$$ is a penalty term that encodes lengthscale and amplitude. It decreases with increasing $$i$$ because of course the sum must converge, and it is always positive. However, in its numpyro implementation, it is unstable for at least the squared exponential kernel. Here is the equation for computing $$\alpha^2$$ where D is the dimension, $$\sqrt A$$ is the kernel amplitude, and $$ell$$ is the kernel lengthscale. 
+But, here's a catch. $$ \alpha $$ is a penalty term that encodes lengthscale and amplitude. It decreases with increasing $$i$$ because of course the sum must converge, and it is always positive. However, in its numpyro implementation, it is unstable for at least the squared exponential kernel. Here is the equation for computing $$ \alpha^2 $$ where D is the dimension, $$ \sqrt A $$ is the kernel amplitude, and $$ \ell $$ is the kernel lengthscale. 
 
 $$
 \alpha^2 = A (\sqrt{2\pi})^D \ell^D \exp\left(-\frac{1}{2} \ell^2 \boldsymbol{\omega}^\top \boldsymbol{\omega}\right)
@@ -47,4 +47,4 @@ $$
 
 Now this is linear in $$\boldsymbol{\omega}^\top \boldsymbol{\omega}$$. Additionally, we are going to take a square root, which in log space is just a multiplication by 1/2. 
 
-Now, when we need $$\sqrt \alpha^2$$, we can compute $$\exp \frac{1}{2} \log \alpha^2$$ and avoid nan values. 
+Now, when we need $$\sqrt {\alpha^2}$$, we can compute $$\exp \frac{1}{2} \log \alpha^2$$ for the same number of flops and avoid nan values. 
