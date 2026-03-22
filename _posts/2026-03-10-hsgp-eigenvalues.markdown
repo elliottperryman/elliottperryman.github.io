@@ -39,12 +39,12 @@ $$
 
 When this is used in a numpyro model with Stochastic Variational Inference (SVI), I kept getting nan values. And wouldn't you believe it, it was not my code! Here's the fix.
 
-First, what is the problem? The problem is that $$ \boldsymbol{\omega}^\top \boldsymbol{\omega}\right $$ can be very large and is in an exponential. This causes underflows/overflows and is just not stable. But the fix is simple. Because $$\alpha$$ is always positive, let's just consider the $$\log \alpha^2$$:
+First, what is the problem? The problem is that $$ \boldsymbol{\omega}^\top \boldsymbol{\omega} $$ can be very large and is in an exponential. This causes underflows/overflows and is just not stable. But the fix is simple. Because $$\alpha$$ is always positive, let's just consider the $$\log \alpha^2$$:
 
 $$
 \log \alpha^2 = \log A + \frac{D}{2} \log(2\pi) + D \log \ell - \frac{1}{2} \ell^2 \boldsymbol{\omega}^\top \boldsymbol{\omega}
 $$
 
-Now this is linear in $$\boldsymbol{\omega}^\top \boldsymbol{\omega}$$. Additionally, we are going to take a square root, which in log space is just a multiplication by 1/2. 
+Now this is linear in $$ \boldsymbol{\omega}^\top \boldsymbol{\omega} $$. Additionally, we are going to take a square root, which in log space is just a multiplication by 1/2. 
 
 Now, when we need $$\sqrt {\alpha^2}$$, we can compute $$\exp \frac{1}{2} \log \alpha^2$$ for the same number of flops and avoid nan values. 
