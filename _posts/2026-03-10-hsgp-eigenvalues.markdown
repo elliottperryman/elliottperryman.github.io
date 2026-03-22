@@ -5,6 +5,7 @@ date:   2026-03-10
 categories: post
 authors: Elliott Perryman
 tag: post
+published: blog post
 ---
 
 I have been working on Gaussian processes now for quite some time, and there is a paper I am excited about, [Hilbert Space Gaussian Processes](https://link.springer.com/article/10.1007/s11222-019-09886-w).
