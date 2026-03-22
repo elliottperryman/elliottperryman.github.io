@@ -11,6 +11,8 @@ tag: post
 
 I have been working on Gaussian processes now for quite some time, and there is a paper I am excited about, [Hilbert Space Gaussian Processes](https://link.springer.com/article/10.1007/s11222-019-09886-w).
 
+<!--more-->
+
 The paper identifies an eigenbasis and eigenfunctions for approximating Gaussian processes. To understand this method, I recommend:
 * [A blog post describing HSGPs](https://juanitorduz.github.io/hsgp_intro/)
 * Numpyro examples [example 1](https://num.pyro.ai/en/stable/examples/hsgp.html) and [example 2](https://num.pyro.ai/en/stable/tutorials/hsgp_nd_example.html)

@@ -10,6 +10,9 @@ published: Blog Post
 
 In this post, I plan to write out an informal description of my PhD thesis.
 
+<!--more-->
+
+
 The main idea is answering the question of how to do experiments most effectively. This is most relevant when there are:
 * costly experiments
 * slow experiments
