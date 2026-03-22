@@ -14,6 +14,7 @@ The main idea is answering the question of how to do experiments most effectivel
 * costly experiments
 * slow experiments
 * many parameters to control
+
 If the experiments are fast or cheap, then there is no point to optimize the experiments, one can just make more measurements. If the number of controllable features are small, then it also does not matter what you do. 
 
 The problem I am addressing is neutron scattering. I made a simple [demo game](neutrons.streamlit.app) (you may need to wake the app up), that is intented to teach what the intuition behind the problem is. 
@@ -23,14 +24,17 @@ Neutrons are very costly to extract, because they need to be extracted from the 
 So, we want to make neutron experiments more efficient, and we think that neutron experiments are a good choice for design of experiments. What does it mean to say that the experiment is efficient? To answer this requires some notation:
 
 Let's imagine that a user can control some parameters, $$\xi$$, such as temperature, scattering angles, magnetic fields, pressure, etc. In return they measure a count of neutrons, $$y$$, relative to the flux output of the reactor, as measured by a monitor, $$M_1$$. There is some model $f$ that contains all the physics of the problem and depends on parameters $$\Phi$$. Then the model is:
+
 $$
 y \sim \text{Poisson}(M_1 * f(\vec{\xi}; \vec{\Phi}))
 $$
+
 and one seeks to identify the parameters $\vec \Phi$.
 
 Sometimes the notation gets confusing for folks who are used to more detailed models. This is quite general. For example, you may wonder where the background is. One can consider $f$ the "Total Model" including background and every other effect that determines the count besides the monitor. For example, a constant background can be written as $$f(\vec{\xi}; \vec{\Phi}) = f_1(\vec{\xi}; \vec{\Phi}) + \theta_{\text{bg}}$$.
 
 In physics, uncertainties are almost always reported as Gaussian, so the result of a study could be that some subset of the parameters $$\phi \subseteq \Phi$$ have an uncertainty given by:
+
 $$
 \phi \sim \mathcal{N}(\hat \phi, \Sigma_\phi)
 $$
