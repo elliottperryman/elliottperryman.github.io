@@ -24,11 +24,11 @@ So, we want to make neutron experiments more efficient, and we think that neutro
 
 Let's imagine that a user can control some parameters, $\xi$, such as temperature, scattering angles, magnetic fields, pressure, etc. In return they measure a count of neutrons, $y$, relative to the flux output of the reactor, as measured by a monitor, $M_1$. There is some model $f$ that contains all the physics of the problem and depends on parameters $\Phi$. Then the model is:
 $$
-y \sim \text{Poisson}(M_1 * f(\vec{\xi}; \vec{\Phi}))
+y \sim \text{Poisson}(M_1 * f({\xi}; {\Phi}))
 $$
-and one seeks to identify the parameters $\vec \Phi$.
+and one seeks to identify the parameters $ \Phi$.
 
-Sometimes the notation gets confusing for folks who are used to more detailed models. This is quite general. For example, you may wonder where the background is. One can consider $f$ the "Total Model" including background and every other effect that determines the count besides the monitor. For example, a constant background can be written as $f(\vec{\xi}; \vec{\Phi}) = f_1(\vec{\xi}; \vec{\Phi}) + \theta_{\text{bg}}$.
+Sometimes the notation gets confusing for folks who are used to more detailed models. This is quite general. For example, you may wonder where the background is. One can consider $f$ the "Total Model" including background and every other effect that determines the count besides the monitor. For example, a constant background can be written as $f({\xi}; {\Phi}) = f_1({\xi}; {\Phi}) + \theta_{\text{bg}}$.
 
 In physics, uncertainties are almost always reported as Gaussian, so the result of a study could be that some subset of the parameters $\phi \subseteq \Phi$ have an uncertainty given by:
 $$
