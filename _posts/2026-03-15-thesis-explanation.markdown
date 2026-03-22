@@ -8,16 +8,33 @@ tag: post
 published: Blog Post
 ---
 
-I thought that I should write a description of what my thesis is. In short, it is about effective use of resources. For a game that hopes to explain the idea, check out [my game](neutrons.streamlit.app).
+In this post, I plan to write out an informal description of my PhD thesis.
 
-Unlike x-rays, neutron research facilities are quite sparse. There are maybe a handful of high flux sources in the world. Building one costs more than a billion (any currency) and operating one costs ~100 mil. euros a year. So, one hopes to extract as much information from these facilities as possible. The way these facilities work is that for the most part there are a series of individual experiments done by users of the facilities, which can last from a few hours to a few weeks. I focus on the longer experiments, which take weeks. I am working on the [Thales instrument](https://www.ill.eu/for-all-users/instruments/instruments-list/thales/description/instrument-layout).
+The main idea is answering the question of how to do experiments most effectively. This is most relevant when there are:
+* costly experiments
+* slow experiments
+* many parameters to control
+If the experiments are fast or cheap, then there is no point to optimize the experiments, one can just make more measurements. If the number of controllable features are small, then it also does not matter what you do. 
 
-So, some notation. Let's imagine that a user can control some parameters such as temperature, scattering angles, magnetic fields, pressure, etc. In return they measure a count of neutrons relative to the flux output of the reactor, as measured by a monitor. We group the controlled parameters into a single name $\vec{\xi}$. We call the observed count of neutrons $y$ and the monitor is called $M_1$. Then one has that there is some relationship $f$ between the controlled and observed parameters governed by parameters $\vec{\Phi}$. Then the model is:
+The problem I am addressing is neutron scattering. I made a simple [demo game](neutrons.streamlit.app) (you may need to wake the app up), that is intented to teach what the intuition behind the problem is. 
+
+Neutrons are very costly to extract, because they need to be extracted from the nucleus of an atom via nuclear fission or spallation. In comparison, photon methods are very cheap. Additionally, neutron experiments are very slow, since there are few neutrons to use, and the parameters are many (magnetic field, temperature, etc).
+
+So, we want to make neutron experiments more efficient, and we think that neutron experiments are a good choice for design of experiments. What does it mean to say that the experiment is efficient? To answer this requires some notation:
+
+Let's imagine that a user can control some parameters, $\xi$, such as temperature, scattering angles, magnetic fields, pressure, etc. In return they measure a count of neutrons, $y$, relative to the flux output of the reactor, as measured by a monitor, $M_1$. There is some model $f$ that contains all the physics of the problem and depends on parameters $\Phi$. Then the model is:
 $$
 y \sim \text{Poisson}(M_1 * f(\vec{\xi}; \vec{\Phi}))
 $$
+and one seeks to identify the parameters $\vec \Phi$.
+
 Sometimes the notation gets confusing for folks who are used to more detailed models. This is quite general. For example, you may wonder where the background is. One can consider $f$ the "Total Model" including background and every other effect that determines the count besides the monitor. For example, a constant background can be written as $f(\vec{\xi}; \vec{\Phi}) = f_1(\vec{\xi}; \vec{\Phi}) + \theta_{\text{bg}}$.
 
-Anyhow, back to the goal: identify $\vec \Phi$ as quickly as possible. One nuance is that not all of $\Phi$ is of interest, as there can be nuisance parameters, such as background. 
+In physics, uncertainties are almost always reported as Gaussian, so the result of a study could be that some subset of the parameters $\phi \subseteq \Phi$ have an uncertainty given by:
+$$
+\phi \sim \mathcal{N}(\hat \phi, \Sigma_\phi)
+$$
 
-That's really it. There are many ways to go about this, but all of them have the same aim. As I make posts on specific methods, I will link them here.
+The goal of the experiment is give precise description of the parameters of interest, which means reducing the determinant of $\Sigma_\phi$. 
+
+There are many ways to do this, which I hope to describe in the future posts.
