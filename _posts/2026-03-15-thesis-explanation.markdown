@@ -22,19 +22,19 @@ Neutrons are very costly to extract, because they need to be extracted from the 
 
 So, we want to make neutron experiments more efficient, and we think that neutron experiments are a good choice for design of experiments. What does it mean to say that the experiment is efficient? To answer this requires some notation:
 
-Let's imagine that a user can control some parameters, $\xi$, such as temperature, scattering angles, magnetic fields, pressure, etc. In return they measure a count of neutrons, $y$, relative to the flux output of the reactor, as measured by a monitor, $M_1$. There is some model $f$ that contains all the physics of the problem and depends on parameters $\Phi$. Then the model is:
+Let's imagine that a user can control some parameters, $$\xi$$, such as temperature, scattering angles, magnetic fields, pressure, etc. In return they measure a count of neutrons, $$y$$, relative to the flux output of the reactor, as measured by a monitor, $$M_1$$. There is some model $f$ that contains all the physics of the problem and depends on parameters $$\Phi$$. Then the model is:
 $$
 y \sim \text{Poisson}(M_1 * f(\vec{\xi}; \vec{\Phi}))
 $$
 and one seeks to identify the parameters $\vec \Phi$.
 
-Sometimes the notation gets confusing for folks who are used to more detailed models. This is quite general. For example, you may wonder where the background is. One can consider $f$ the "Total Model" including background and every other effect that determines the count besides the monitor. For example, a constant background can be written as $f(\vec{\xi}; \vec{\Phi}) = f_1(\vec{\xi}; \vec{\Phi}) + \theta_{\text{bg}}$.
+Sometimes the notation gets confusing for folks who are used to more detailed models. This is quite general. For example, you may wonder where the background is. One can consider $f$ the "Total Model" including background and every other effect that determines the count besides the monitor. For example, a constant background can be written as $$f(\vec{\xi}; \vec{\Phi}) = f_1(\vec{\xi}; \vec{\Phi}) + \theta_{\text{bg}}$$.
 
-In physics, uncertainties are almost always reported as Gaussian, so the result of a study could be that some subset of the parameters $\phi \subseteq \Phi$ have an uncertainty given by:
+In physics, uncertainties are almost always reported as Gaussian, so the result of a study could be that some subset of the parameters $$\phi \subseteq \Phi$$ have an uncertainty given by:
 $$
 \phi \sim \mathcal{N}(\hat \phi, \Sigma_\phi)
 $$
 
-The goal of the experiment is give precise description of the parameters of interest, which means reducing the determinant of $\Sigma_\phi$. 
+The goal of the experiment is give precise description of the parameters of interest, which means reducing the determinant of $$\Sigma_\phi$$. 
 
 There are many ways to do this, which I hope to describe in the future posts.
