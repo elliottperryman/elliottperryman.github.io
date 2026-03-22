@@ -17,6 +17,6 @@ Collaborators:
  - [Marcus Noack](https://www.marcusnoack.com)
  - [Mario Teixeira Parente](https://www.mateipa.de)
  - [Astrid Schneidewind](https://www.fz-juelich.de/profile/schneidewind_a)
- - [Paolo Mutti](https://www.ill.eu/for-ill-users/support-infrastructures/instrument-control-service) (I could not find an ILL homepage for him)
- - [Yannick LeGoc](https://fr.linkedin.com/in/yannick-le-goc-278aa65)
+ - [Paolo Mutti](https://www.ill.eu/for-ill-users/support-infrastructures/instrument-control-service) 
+ - [Yannick LeGoc](https://fr.linkedin.com/in/yannick-le-goc-278aa65) (LinkedIn)
  - [Tobias Weber](https://www.ill.eu/for-ill-users/support-labs-infrastructure/computing-for-science/tobias-weber-1)
